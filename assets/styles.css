@@ -3,5 +3,74 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+header {
+    position: relative;
+}
+
+header h1, form {
+    padding: 10px;
+}
+
+#header-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+h1 {
+    display: inline-block;
+}
+
+span#title-com {
+    color: red;
+    font-size: 15px;
+}
+
+#title-search-form {
+    display: inline-block;
+}
+
+header nav {
+    margin-top: 15px;
+    position: relative;
+    left: 10vw;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        ". . ."
+        ". receitas ."
+        ". . ."
+    ;
+    gap: 25px;
+}
+
+main#content {
+    display: flex;
+    gap: 0px 100px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    grid-area: receitas;
+
+    border: 1px solid red;
+    height: 100vh;
+    width: 75vw;
+}
+
+.receitas {
+    height: 25vh;
+    width: 12vw;
+    border: 1px solid black;
+
+    cursor: pointer;
+}
