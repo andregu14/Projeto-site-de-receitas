@@ -70,12 +70,25 @@ div#content {
     border: 1px solid black;
 
     cursor: pointer;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.receita-img {
+    height: 70%;
+    width: 100%;
+    background-image: url('Placeholder - default image');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.receitas:hover .receita-img {
+    transform: scale(1.1);
+}
 
 .receita-separador {
     height: 2px;
