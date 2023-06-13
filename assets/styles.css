@@ -78,10 +78,12 @@ header nav a:hover {
     color: rgba(56, 56, 43, 0.233);
 }
 
+/* Estilos do banner rotativo */
+
 .slider {
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 100vw;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -98,16 +100,17 @@ header nav a:hover {
 .slide {
     width: 25%;
     position: relative;
+    transition: 1s;
 }
 
 .slide img {
-    width: 800px;
+    width: 100vw;
 }
 
 .manual-navigation {
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width: 100vw;
+    margin-top: 170px;
     display: flex;
     justify-content: center;
 
@@ -144,8 +147,8 @@ header nav a:hover {
 
 .navigation-auto {
     position: absolute;
-    width: 800px;
-    margin-top: 360px;
+    width: 100vw;
+    margin-top: 570px;
     display: flex;
     justify-content: center;
 
@@ -160,11 +163,13 @@ header nav a:hover {
     background-color: white;
 }
 
+/* Fim dos estilos do Banner rotativo */
+
 #spacer {
     height: 2px;
     width: 80%;
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 main {
