@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kaushan+Script&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     padding: 0;
@@ -13,6 +13,8 @@
 :root {
     --default-font: 'Roboto', sans-serif;
     --title-font: 'Kaushan Script', cursive;
+    --font-banner: 'Inter', sans-serif; /* Fonte Bold 700 */
+    --red-color: #a30000;
 }
 
 header {
@@ -36,13 +38,20 @@ header h1, header form, header nav {
 h1 {
     display: inline-block;
     font-family: var(--title-font);
-    font-size: 4em;
+    font-size: 3em;
 }
 
 span#title-com {
-    color: red;
+    background-color: var(--red-color);
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
     font-size: 0.3em;
-    padding-left: 5px;
+    margin-left: 6px;
+}
+
+span#title-dot {
+    font-size: 1.7em;
 }
 
 #title-search {
@@ -101,6 +110,48 @@ header nav a:hover {
     width: 25%;
     position: relative;
     transition: 1s;
+}
+
+.texto-slide {
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    color: white;
+    width: 35%;
+    height: 60%;
+
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.texto-slide h2 {
+    font-family: var(--font-banner);
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.texto-slide p {
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.texto-slide button {
+    background-color: var(--red-color);
+    padding: 10px 40px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    text-shadow: inherit;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.texto-slide button:hover {
+    background-color: #8a0202;
 }
 
 .slide img {
@@ -169,7 +220,7 @@ header nav a:hover {
     height: 2px;
     width: 80%;
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
+    margin: 70px auto;
 }
 
 main {
@@ -179,7 +230,7 @@ main {
         ". receitas ."
         ". . ."
     ;
-    gap: 25px 125px;
+    gap: 0px 125px;
 }
 
 div#content {
