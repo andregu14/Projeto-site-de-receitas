@@ -15,7 +15,7 @@
     --default-font: 'Open Sans','Roboto', sans-serif;
     --title-font: 'Kaushan Script', cursive;
     --font-banner: 'Inter', sans-serif; /* Fonte Bold 700 */
-    --red-color: #a30000;
+    --red-color: rgb(163, 0, 0);
 }
 
 /* Estilos do header */
@@ -24,19 +24,15 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 20px;
+    height: 100px;
 }
 
-header h1, header form, header nav {
-    padding: 10px;
-}
-
-#header-flex {
+/* #header-flex {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-}
+} */
 
 h1 {
     display: inline-block;
@@ -45,12 +41,14 @@ h1 {
     display: none;
 }
 
+#header-logo {
+    display: inline-flex;
+    height: 80px;
+}
+
 #title-search-form {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 0 5px;
-    border-collapse: collapse;
+    display: inline-flex;
+    font-size: 1.4em;
 }
 
 #title-search-form label {
@@ -70,16 +68,38 @@ h1 {
     border: 1px solid black;
 }
 
+.procurar {
+    position: relative;
+    cursor: pointer;
+}
+
+#procurar-botao:hover, .fa-magnifying-glass {
+    background-color: #e7e6e6;
+}
+
 #procurar-botao {
+    height: 42px;
+    width: 30px;
     position: absolute;
-    left: 250px;
+    left: -1px;
     padding: 5px;
     border-radius: 0 10px 10px 0;
     border: 1px solid black;
+    background-color: #efeff1;
+
+}
+
+
+
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: calc(21px / 2);
+    left: calc(5px / 2) ;
 }
 
 header nav {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     gap: 0px 15px;
 }
