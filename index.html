@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,19 @@
     <link rel="stylesheet" href="assets/styles.css">
     <script src="https://kit.fontawesome.com/3d00111102.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <div id="header-flex">
-            <h1 class="main-title">Receitas</h1>
-            <form action="" id="title-search-form">
-                <label for="title-search">Procurar</label>
-                <input type="search" name="title-search" id="title-search" placeholder="Pesquisar">
-                <input type="button" value="Procurar" id="procurar-botao">
-            </form>
-        </div>
+        <h1 class="main-title">Receitas</h1>
+        <img src="assets/images/logo-receitas.png" alt="Logo Receitas" id="header-logo">
+        <form action="" id="title-search-form">
+            <label for="title-search">Procurar</label>
+            <input type="search" name="title-search" id="title-search" placeholder="Pesquisar">
+            <div class="procurar">
+                <input type="button" value="" id="procurar-botao">
+                <i class="fa-solid fa-magnifying-glass" style="color: #a30000;"></i>
+            </div>
+        </form>
         <nav>
             <a href="">Inicio</a>
             <a href="">Receitas</a>
@@ -34,7 +38,9 @@
                 <img src="assets/images/imagem-comida-fundo-preto.jpg" alt="Ingredientes">
                 <div class="texto-slide">
                     <h2>Principais Receitas</h2>
-                    <p>Bem-vindo ao site de receitas mais delicioso da internet! Aqui você vai encontrar as principais receitas de diversos tipos de culinária, desde as mais simples até as mais sofisticadas. Se você gosta de cozinhar e experimentar novos sabores, este é o lugar certo para você.</p>
+                    <p>Bem-vindo ao site de receitas mais delicioso da internet! Aqui você vai encontrar as principais
+                        receitas de diversos tipos de culinária, desde as mais simples até as mais sofisticadas. Se você
+                        gosta de cozinhar e experimentar novos sabores, este é o lugar certo para você.</p>
                     <button>Confira</button>
                 </div>
             </div>
@@ -42,7 +48,10 @@
                 <img src="assets/images/salada-de-legumes-fundo-preto.jpg" alt="Salada de legumes">
                 <div class="texto-slide">
                     <h2>Deliciosas Saladas</h2>
-                    <p>Aqui você vai encontrar receitas de saladas incríveis para todos os gostos e ocasiões. Você vai aprender como preparar saladas simples, rápidas e nutritivas, mas também saladas sofisticadas, criativas e saborosas. Seja para uma refeição leve, um acompanhamento ou um prato principal, você vai se surpreender com a variedade e a qualidade das nossas receitas.</p>
+                    <p>Aqui você vai encontrar receitas de saladas incríveis para todos os gostos e ocasiões. Você vai
+                        aprender como preparar saladas simples, rápidas e nutritivas, mas também saladas sofisticadas,
+                        criativas e saborosas. Seja para uma refeição leve, um acompanhamento ou um prato principal,
+                        você vai se surpreender com a variedade e a qualidade das nossas receitas.</p>
                     <button>Confira</button>
                 </div>
             </div>
@@ -63,13 +72,17 @@
     <main>
         <div id="content">
             <div class="receitas">
-                <div class="receita-img" style="background-image: url(https://www.mariareceita.com.br/wp-content/uploads/2022/03/receita-panquecas-carne-moida.jpg);"></div>
+                <div class="receita-img"
+                    style="background-image: url(https://www.mariareceita.com.br/wp-content/uploads/2022/03/receita-panquecas-carne-moida.jpg);">
+                </div>
                 <div class="receita-separador"></div>
                 <p class="receita-nome">Aqui vai o nome da receita</p>
             </div>
 
             <div class="receitas">
-                <div class="receita-img" style="background-image: url(https://catracalivre.com.br/wp-content/uploads/2022/03/img-8857.jpg);"></div>
+                <div class="receita-img"
+                    style="background-image: url(https://catracalivre.com.br/wp-content/uploads/2022/03/img-8857.jpg);">
+                </div>
                 <div class="receita-separador"></div>
                 <p class="receita-nome">Aqui vai o nome da receita</p>
             </div>
@@ -149,4 +162,5 @@
     </footer>
     <script src="assets/scripts/banner-rotativo.js"></script>
 </body>
+
 </html>
