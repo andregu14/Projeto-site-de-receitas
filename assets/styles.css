@@ -18,6 +18,10 @@
     --red-color: rgb(163, 0, 0);
 }
 
+body {
+    background-color: #f7f7f8;
+}
+
 /* Estilos do header */
 
 header {
@@ -26,13 +30,6 @@ header {
     align-items: center;
     height: 100px;
 }
-
-/* #header-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-} */
 
 h1 {
     display: inline-block;
@@ -55,17 +52,26 @@ h1 {
     display: none;
 }
 
-#title-search-form ::placeholder {
-    font-size: 0.6em;
-    position: absolute;
-    left: 10px;
-    top: 5px;
+#title-search {
+    appearance: none;
+    background-clip: padding-box;
+    font-size: 1.3em;
+    transition: border 100ms ease-in, background-color 100ms ease-in;
+    border-radius: 0.6rem 0 0 0.6rem !important;
+    border: 0px solid transparent;
+    box-shadow: inset 0 0 0 1px rgba(50, 50, 57, 62);
+    color: #0e0e10;
+    background-color: white;
+
+    display: flex;
+    width: 100%;
+    height: 2.6rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem !important;
 }
 
-#title-search {
-    font-size: 1.3em;
-    border-radius: 10px 0 0 10px;
-    border: 1px solid black;
+#title-search-hover {
+    /* TODO */
 }
 
 .procurar {
@@ -73,29 +79,28 @@ h1 {
     cursor: pointer;
 }
 
-#procurar-botao:hover, .fa-magnifying-glass {
-    background-color: #e7e6e6;
+.procurar:hover {
+    #procurar-botao {
+        cursor: pointer;
+        background-color: hsl(240deg 7% 70% / 35%);
+    }
 }
 
 #procurar-botao {
     height: 42px;
-    width: 30px;
+    width: 35px;
     position: absolute;
     left: -1px;
     padding: 5px;
-    border-radius: 0 10px 10px 0;
-    border: 1px solid black;
-    background-color: #efeff1;
-
+    border-radius: 0 0.6rem 0.6rem 0;
+    border: 0;
+    background-color: hsl(240deg 7% 70% / 22%);
 }
-
-
-
 
 .fa-magnifying-glass {
     position: absolute;
-    top: calc(21px / 2);
-    left: calc(5px / 2) ;
+    top: calc(42px / 4);
+    left: calc(22px / 4) ;
 }
 
 header nav {
