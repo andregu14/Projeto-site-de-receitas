@@ -52,8 +52,8 @@ h1 {
 
 .fa-xmark {
     position: absolute;
-    left: 257px;
-    top: 11px;
+    left: 282px;
+    top: 12px;
     display: none;
 }
 
@@ -80,11 +80,18 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100%;
     height: 2.6rem;
     font-size: 1.4rem;
-    padding: 0.5rem 1rem !important;
+    padding: 0.5rem 2rem 0.5rem 1rem !important;
 }
 
-#title-search-hover {
-    /* TODO */
+#title-search:focus, #title-search:focus:hover {
+    box-shadow: 0 0 0 2px var(--red-color), inset 0 0 0 2px var(--red-color);
+    outline-offset: -1px;
+    border-color: var(--red-color);
+    background-color: white;
+}
+
+#title-search:focus-visible {
+    outline: none;
 }
 
 .procurar {
