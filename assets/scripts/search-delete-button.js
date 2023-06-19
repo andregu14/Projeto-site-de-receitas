@@ -19,5 +19,6 @@ function Delete() {
     if (searchInput.value !== '') {
         searchInput.value = ''
         searchIcon.style.display = 'none'
+        searchInput.focus()
     }
 }
