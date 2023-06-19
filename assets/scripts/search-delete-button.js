@@ -14,6 +14,10 @@ searchInput.addEventListener('input', () => {
     }
 })
 
+searchIcon.addEventListener('mousedown', (event) => {
+    event.preventDefault()
+})
+
 function Delete() {
 
     if (searchInput.value !== '') {
