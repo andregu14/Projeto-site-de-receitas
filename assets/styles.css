@@ -107,7 +107,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #procurar-botao {
-    height: 42px;
+    height: 100%;
     width: 35px;
     position: absolute;
     left: -1px;
@@ -137,6 +137,35 @@ header nav a {
 header nav a:hover {
     color: rgba(56, 56, 43, 0.233);
 }
+
+/* Consulta de mídia para telas menores que 600px */
+@media (max-width:600px) { 
+
+    header { 
+        flex-direction: column;
+        height: fit-content;
+    }
+    header nav {
+        display: none;
+    }
+    
+    h1 { 
+        font-size: 2em; 
+    } 
+    
+    #header-logo { 
+        height: 80px; 
+    } 
+    
+    #title-search-form { 
+        font-size: 1.2em; 
+    } 
+    
+    #title-search { 
+        height: 2.4rem; font-size: 1.2rem; 
+    } 
+    
+} 
 
 /* Fim dos estilos do header */
 
