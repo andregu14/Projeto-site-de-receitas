@@ -83,6 +83,13 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 0.5rem 2rem 0.5rem 1rem !important;
 }
 
+#title-search:hover {
+    outline: none;
+    border-color: rgba(50, 50, 57, 62);
+    box-shadow: inset 0 0 0 2px rgba(50, 50, 57, 62);
+    background-color: white;
+}
+
 #title-search:focus, #title-search:focus:hover {
     box-shadow: 0 0 0 2px var(--red-color), inset 0 0 0 2px var(--red-color);
     outline-offset: -1px;
