@@ -16,6 +16,8 @@
     --title-font: 'Kaushan Script', cursive;
     --font-banner: 'Inter', sans-serif; /* Fonte Bold 700 */
     --red-color: rgb(163, 0, 0);
+    --background-color-button: hsla(240, 7%, 70%, 0.349);
+    --color-black-default: #0e0e10;
 }
 
 body {
@@ -73,7 +75,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 0.6rem 0 0 0.6rem !important;
     border: 0px solid transparent;
     box-shadow: inset 0 0 0 1px rgba(50, 50, 57, 62);
-    color: #0e0e10;
+    color: var(--color-black-default);
     background-color: white;
 
     display: flex;
@@ -109,7 +111,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .procurar:hover {
     #procurar-botao {
         cursor: pointer;
-        background-color: hsl(240deg 7% 70% / 35%);
+        background-color: hsl(240deg 7% 70% / 50%);
     }
 }
 
@@ -121,7 +123,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 5px;
     border-radius: 0 0.6rem 0.6rem 0;
     border: 0;
-    background-color: hsl(240deg 7% 70% / 22%);
+    background-color: var(--background-color-button);
 }
 
 .fa-magnifying-glass {
@@ -133,16 +135,55 @@ input[type="search"]::-webkit-search-cancel-button {
 header nav {
     display: inline-flex;
     justify-content: center;
-    gap: 0px 15px;
+    gap: 0px 12px;
 }
 
-header nav a {
+header nav a, #receitas-button {
     text-decoration: none;
-    color: black;
+    color: var(--color-black-default);
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
-header nav a:hover {
-    color: rgba(56, 56, 43, 0.233);
+#receitas-button {
+    position: relative;
+}
+
+#receitas-button:hover {
+    .receitas-menu {
+        display: block;
+    }
+}
+
+.receitas-menu {
+    position: absolute;
+    display: none;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 0.6rem !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .16), 0 0px 4px rgba(0, 0, 0, .05);
+}
+
+
+.receitas-menu ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.receitas-menu li {
+    list-style-type: none;
+}
+
+header nav a:hover, #receitas-button:hover{
+    background-color: var(--background-color-button);
+    color: var(--color-black-default);
+    cursor: pointer;
 }
 
 /* Consulta de mídia para telas menores que 600px */
@@ -281,7 +322,7 @@ header nav a:hover {
 }
 
 .navigation-auto div {
-    border: 2px solid black;
+    border: 2px solid var(--color-black-default);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
