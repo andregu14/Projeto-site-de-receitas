@@ -138,7 +138,13 @@ header nav {
     gap: 0px 12px;
 }
 
-header nav a, #receitas-button {
+#receitas-menu-wrapper {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+}
+
+header > nav > a, #receitas-button {
     text-decoration: none;
     color: var(--color-black-default);
     padding: 10px;
@@ -146,38 +152,36 @@ header nav a, #receitas-button {
     font-weight: bold;
 }
 
-#receitas-button {
-    position: relative;
-}
-
-#receitas-button:hover {
-    .receitas-menu {
-        display: block;
-    }
-}
-
-.receitas-menu {
+#receitas-menu {
     position: absolute;
     display: none;
-    height: fit-content;
-    width: fit-content;
+    width: 225px;
     z-index: 1;
     background-color: white;
-    padding: 15px 30px;
     border-radius: 0.6rem !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .16), 0 0px 4px rgba(0, 0, 0, .05);
 }
 
-
-.receitas-menu ul {
+#receitas-menu ul {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 15px;
+    margin: 10px 10px;
+    gap: 8px;
 }
 
-.receitas-menu li {
+#receitas-menu li, a {
     list-style-type: none;
+    text-decoration: none;
+}
+
+#receitas-menu a {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 30px 10px 5px;
+    color: var(--color-black-default)
+
 }
 
 header nav a:hover, #receitas-button:hover{
