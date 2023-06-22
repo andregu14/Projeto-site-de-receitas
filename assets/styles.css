@@ -16,7 +16,7 @@
     --title-font: 'Kaushan Script', cursive;
     --font-banner: 'Inter', sans-serif; /* Fonte Bold 700 */
     --red-color: rgb(163, 0, 0);
-    --background-color-button: hsla(240, 7%, 70%, 0.349);
+    --background-color-button: #adadb859;
     --color-black-default: #0e0e10;
 }
 
