@@ -181,8 +181,10 @@ header > nav > a, #receitas-button {
     height: fit-content;
     padding: 10px 30px 10px 5px;
     color: var(--color-black-default)
-
 }
+ #lista-receitas-menu > li{
+    border-left: 5px solid var(--red-color);
+ }
 
 header nav a:hover, #receitas-button:hover{
     background-color: var(--background-color-button);
