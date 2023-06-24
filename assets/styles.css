@@ -370,14 +370,33 @@ header nav a:hover, #receitas-button:hover{
     margin: 0 auto;
     height: 550px;
     width: 100%;
-    border: 1px dashed blueviolet;
+}
+
+.container h3, p, button {
+    margin-left: 15px;
+}
+
+.container button {
+    background-color: var(--red-color);
+    padding: 10px 40px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    text-shadow: inherit;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+    margin-top: 35px;
+}
+
+.container button:hover {
+    background-color: #8a0202;
 }
   
 .left {
     flex: 1;
     width: 50%;
     height: inherit;
-    border: 1px dashed green;
     overflow: hidden;
 
     background-position: left center;
@@ -389,18 +408,16 @@ header nav a:hover, #receitas-button:hover{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px 0;
     text-shadow: 0 1px 3px rgba(0,0,0,.8);
+    gap: 40px 0;
 }
-
 
 .left h3, p {
     color: white;
-    margin-bottom: 50px;
 }
 
 .left h3 {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 .left p {
@@ -416,12 +433,41 @@ header nav a:hover, #receitas-button:hover{
 }
 
 .top {
+    color: white;
     background-position: left center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+    gap: 15px 0;
 }
-  
+
+.top h3 {
+    font-size: 2em;
+}
+
+.bottom {
+    color: white;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+    gap: 15px 0;
+}
+
+.bottom h3 {
+    font-size: 2em;
+}
+
 .top, .bottom {
     flex: 1;
-    border: 1px dashed green;
 }
 
 
